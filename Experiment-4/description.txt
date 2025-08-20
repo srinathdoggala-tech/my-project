@@ -1,0 +1,28 @@
+Live Character Counter :
+This experiment is about creating a small webpage that shows the number of characters typed in a text box, instantly as you type.
+
+What it does :
+You see a text area where you can type anything.
+Below the text area, a counter shows how many characters you have typed.
+As soon as you type or delete something, the number updates automatically.
+
+How it works :
+HTML creates the structure:
+A box (container) that holds the heading, text area, and the counter.
+The <textarea> lets the user type.
+A <span> is used to display the live count of characters.
+
+CSS styles the page:
+Adds borders and spacing to make it look neat.
+Makes the textarea bigger and comfortable to type in.
+Displays the counter clearly with bold text.
+
+JavaScript makes it interactive:
+It “listens” to the typing event in the textarea.
+Every time you type or erase, it calculates the total characters (textarea.value.length).
+It updates the counter on the screen in real time.
+
+Why it’s useful :
+Helps in situations where there’s a character limit (like tweets, SMS, or forms).
+Easy to understand for beginners learning web development.
+Demonstrates how HTML, CSS, and JavaScript work together.
