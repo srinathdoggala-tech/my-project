@@ -1,0 +1,30 @@
+DESCRIPTION:
+In this project, I made a small webpage where you can filter products by category. At the top, there is a dropdown menu with options like All, Clothing, Electronics, and Books. When you choose a category, the list below changes and only shows the items that belong to that category. The work of showing and hiding items is done using JavaScript, while CSS makes the page look neat and simple.
+
+TEST CASES AND FEATURES:
+
+1. Product List:
+ *All products are shown at first (clothes, electronics, and books).
+
+2. Dropdown Menu:
+*A dropdown is given to select a category.
+
+3.Filtering with JavaScript:
+*If you choose Clothing, only clothes like T-Shirt, Jeans, Jackets will show.
+*If you choose Books, only book names like Avengers, Pirates of the Caribbean will show.
+*If you choose All, everything is shown again.
+
+4. Instant Update:
+*The list changes immediately when you change the dropdown (no page reload).
+
+5. Styling:
+*The whole design is kept inside a box with a border.
+*Products are shown in a neat list with spacing and borders.
+
+WHAT I LEARNED:
+From this project, I understood:
+*How to make a dropdown menu in HTML.
+*How to use data-category to mark which item belongs to which group.
+*How to write JavaScript that listens when the dropdown changes and updates the list.
+*How to hide and show elements using style.display.
+*How to style a simple box and list using CSS to make it look clear and tidy.
