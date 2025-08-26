@@ -15,27 +15,26 @@ svg.addEventListener("mousedown", (e) => {
     const pos = getMousePosition(e);
 
     currentPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    currentPath.setAttribute("d", M ${pos.x} ${pos.y});
+    currentPath.setAttribute("d", `M ${pos.x} ${pos.y}`);  // <-- fixed here (backticks)
     currentPath.setAttribute("stroke", "blue");
     currentPath.setAttribute("stroke-width", "2");
     currentPath.setAttribute("fill", "none");
     svg.appendChild(currentPath);
 });
 
-
 document.addEventListener("mousemove", (e) => {
     if (!drawing || !currentPath) return;
 
-    
     const rect = svg.getBoundingClientRect();
-    if (e.clientX >= rect.left && e.clientX <= rect.right &&
-        e.clientY >= rect.top && e.clientY <= rect.bottom) {
+    if (
+        e.clientX >= rect.left && e.clientX <= rect.right &&
+        e.clientY >= rect.top && e.clientY <= rect.bottom
+    ) {
         const pos = getMousePosition(e);
         let d = currentPath.getAttribute("d");
         currentPath.setAttribute("d", d + ` L ${pos.x} ${pos.y}`);
     }
 });
-
 
 document.addEventListener("mouseup", () => {
     drawing = false;
