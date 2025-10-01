@@ -1,0 +1,16 @@
+Product List React App
+
+This little project is all about showing a simple Products List in React.
+It displays three items – a Wireless Mouse, a Keyboard, and a Monitor – along with their prices and whether they’re in stock or not.
+
+The idea here is to practice React components and props. Instead of writing the same code three times, I built a single ProductCard component and reused it for all products.
+
+When you run the app, you’ll see:
+
+A nice heading at the top: Products List
+
+Three cards in a row, each with the product’s name, price, and availability
+
+A clean, simple design that looks neat and organized
+
+This project is perfect if you’re just starting out with React and want to understand how components, props, and styling work together.

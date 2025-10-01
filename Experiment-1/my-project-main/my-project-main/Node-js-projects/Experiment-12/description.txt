@@ -1,0 +1,23 @@
+Project Overview
+A Node.js and Express.js based ticket booking system that implements concurrent seat reservation with locking mechanism to prevent race conditions. This system simulates real-world booking scenarios similar to platforms like BookMyShow or Ticketmaster.
+
+Technical Architecture
+Core Components
+Express.js Server: RESTful API framework
+
+In-Memory Storage: Volatile data persistence using JavaScript arrays and Map
+
+Concurrency Control: Seat locking mechanism with timeout
+
+Automatic Cleanup: Periodic expiration of stale locksProject Overview
+A Node.js and Express.js based ticket booking system that implements concurrent seat reservation with locking mechanism to prevent race conditions. This system simulates real-world booking scenarios similar to platforms like BookMyShow or Ticketmaster.
+
+Technical Architecture
+Core Components
+Express.js Server: RESTful API framework
+
+In-Memory Storage: Volatile data persistence using JavaScript arrays and Map
+
+Concurrency Control: Seat locking mechanism with timeout
+
+Automatic Cleanup: Periodic expiration of stale locks

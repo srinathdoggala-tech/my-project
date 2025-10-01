@@ -1,0 +1,39 @@
+ E-commerce API with Node.js, Express, and MongoDB
+---------------------------------------------------
+This project is a simple e-commerce backend built using:
+  - Express.js (for handling HTTP routes and middleware)
+  - Mongoose (for MongoDB object modeling)
+  - Body-Parser (for parsing incoming JSON requests)
+
+ Features:
+  1. Create a new product with multiple variants (color, size, stock).
+  2. Get all products or filter products:
+       - by category
+       - by variant color
+       - by variant size
+  3. Update a specific variant’s stock of a product.
+  4. Delete a specific variant from a product.
+  5. Delete an entire product.
+
+ Data Model:
+  - Product
+      • name: String
+      • price: Number
+      • category: String
+      • variants: [
+            { color: String, size: String, stock: Number }
+        ]
+
+ Endpoints:
+  - GET    /products                     → Get all products
+  - GET    /products/category/:category  → Get products by category
+  - GET    /products/by-color/:color     → Get products by color
+  - GET    /products/by-size/:size       → Get products by size
+  - POST   /products                     → Add a new product
+  - PUT    /products/:id/variant         → Update stock of a variant
+  - DELETE /products/:id/variant         → Remove a variant
+  - DELETE /products/:id                 → Delete a product
+
+ Server runs on: http://localhost:3000
+
+This API can be tested easily using Postman or any REST client.

@@ -1,0 +1,105 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.library-container {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #a19f9f;
+}
+
+/* Dark input fields */
+.dark-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #777373;
+  color: #f0f0f0;
+  border: none;
+  font-size: 16px;
+}
+
+.dark-input::placeholder {
+  color: #aaa;
+}
+
+/* Button styles */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  color: #fff;
+}
+
+/* Specific colors for Add and Remove buttons */
+.add-button {
+  background-color: #bfc3c8;
+}
+
+.add-button:hover {
+  background-color: #a3a7aa;
+}
+
+.remove-button {
+  background-color: #beb7b8;
+  white-space: nowrap;
+}
+
+.remove-button:hover {
+  background-color: #bcb8b9;
+}
+
+.add-book-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.add-book-container .dark-input {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #999;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.book-item span {
+  flex-grow: 1;
+}
+
+.book-item .remove-button {
+  margin-left: 10px;
+}

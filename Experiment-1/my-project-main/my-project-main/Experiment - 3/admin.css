@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+ 
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color:green;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navigation {
+  background-color:rgb(164, 163, 163);
+  width: 200px;
+  padding: 20px;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navi a {
+  text-decoration: none;
+  color:blue;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+footer {
+  background-color:green;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.button {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: black;
+  color:white;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color:rgb(22, 22, 22);
+}
+
+.dark-mode .sidebar {
+  background-color:rgb(132, 129, 129);
+}
+
+.dark-mode .sidebar a {
+  color:white;
+}

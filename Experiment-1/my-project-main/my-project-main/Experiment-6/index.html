@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SVG Drawing Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h2>SVG Drawing Tool</h2>
+
+    <!-- control buttons -->
+    <div class="toolbar">
+      <button id="drawModeBtn" class="active">Draw Mode</button>
+      <button id="clearBtn">Clear All</button>
+    </div>
+
+    <!-- Drawing canvas -->
+    <div class="canvas-frame">
+      <svg id="drawingArea" width="900" height="520"></svg>
+    </div>
+
+    <p class="hint">
+      Click and drag to draw. Release to finish a stroke. Repeat to draw multiple shapes/letters.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

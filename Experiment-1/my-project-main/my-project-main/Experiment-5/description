@@ -1,0 +1,5 @@
+This is a simple dynamic product filter web page. 
+It allows you to view products by selecting a category from the dropdown menu. When you choose a category, only the products that belong to that category will be displayed, while others will be hidden. Selecting "All" will show every product.
+This project is about building a simple and interactive product list on a web page. Imagine you have different types of products—like clothes, gadgets, or books—and you want to quickly find what you’re looking for. To make that easier, we add a dropdown menu on top of the product list.
+When you pick a category from the dropdown, the list instantly updates to show only the items that belong to that category. For example, if you choose “Clothing,” you’ll only see shirts and jeans. If you choose “Electronics,” you’ll see gadgets like headphones or smartphones. And if you select “All,” then every product will appear again.
+The key part is that all this happens in real time without refreshing the page. This is done using JavaScript DOM manipulation—which means the script listens for your selection, and then shows or hides the products based on what you picked.

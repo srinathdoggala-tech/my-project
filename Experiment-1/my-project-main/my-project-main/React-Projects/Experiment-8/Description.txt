@@ -1,0 +1,12 @@
+Library Management UI
+
+This project is a simple Library Management App built with React. It lets you keep track of books and manage them easily through a clean interface.
+
+With this app, you can:
+ Search books by title or author instantly as you type
+ Add new books to the list with a simple form
+ Remove books from the list with one click
+
+The whole app updates dynamically without refreshing the page, thanks to React’s state management and event handling.
+
+This is a beginner-friendly project to practice how React handles user input, updates the UI in real time, and works with dynamic lists. It’s a neat way to strengthen your basics in building interactive web apps.

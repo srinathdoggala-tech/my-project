@@ -1,0 +1,4 @@
+In this experiment We made a live page which count the alphabets in a string. 
+Here we use HTML, Style.css, And Java script
+we also use text area in html that defines a multi-line text input control.
+ It is commonly used within forms to allow users to enter larger blocks of text, such as comments, messages, reviews, or detailed descriptions
