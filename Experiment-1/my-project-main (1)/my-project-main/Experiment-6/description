@@ -1,0 +1,6 @@
+This project is about creating a simple online drawing tool using SVG and JavaScript. The idea is to let users draw shapes inside a special area on a web page, almost like a mini paint app. The drawing happens by clicking and dragging the mouse — for example, when you press the mouse button and move it around, a shape (like a line or rectangle) appears and follows your movement. When you release the mouse button, the shape is placed on the canvas.
+The best part is that you can keep drawing as many shapes as you like, one after another, without refreshing the page. This is possible because of how we use JavaScript mouse events:
+mousedown → starts the drawing when the user clicks.
+mousemove → updates the shape while the user is dragging the mouse.
+mouseup → finishes the drawing when the user lets go.
+By combining SVG (for graphics) and JavaScript (for interactivity), the tool feels smooth and responsive. It shows how powerful the DOM and event handling can be when building something interactive.

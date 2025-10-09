@@ -1,0 +1,54 @@
+EMPLOYEE MANAGEMENT System
+
+-->FIELD: Employee Name
+Requirement: Name is required, cannot be empty.
+VALID INPUTS:
+"John Doe" – Accepts normal names.
+"Alice" – Single word names also valid.
+INVALID INPUTS:
+"" (empty) – Should show message "Name and ID cannot be empty."
+
+-->FIELD: Employee ID
+Requirement: ID is required, cannot be empty. Should be unique for proper identification.
+VALID INPUTS:
+"E101" – Adds successfully.
+"12345" – Numeric ID also valid.
+INVALID INPUTS:
+"" (empty) – Should show message "Name and ID cannot be empty."
+Duplicate IDs – Allowed by code, but may cause confusion when removing employees.
+
+--->FUNCTION: Add Employee
+Behavior: If both name and ID are provided, new employee is added to the list. Otherwise, error message shown.
+TEST CASES:
+Input → Name: "Mark", ID: "E202" → Employee added.
+Input → Name empty, ID: "E203" → Shows error.
+Input → Name: "Sarah", ID empty → Shows error.
+
+--->FUNCTION: List Employees
+Behavior: Displays all employees with index, name, and ID.
+TEST CASES:
+No employees in system → Shows "No employees found."
+After adding → Shows list with numbering.
+
+--->FUNCTION: Remove Employee
+Behavior: Removes employee based on ID entered.
+TEST CASES:
+Enter ID that exists → Employee removed successfully.
+Enter ID not in list → Shows "Employee with that ID not found."
+
+--->FUNCTION: Exit Application
+Behavior: Closes the program with message "Exiting the application. Goodbye!"
+
+OVERALL APPLICATION FLOW
+
+1.Starts with welcome message and menu options.
+2,Accepts user choice from 1–4.
+3.Invalid choice → shows error "Invalid choice. Please enter a number from 1 to 4." and redisplays menu.
+
+--->LEARNING OUTCOMES
+
+1. Learnt how to create a basic Employee Management System using Node.js.
+2. Practiced using readline module for interactive console input/output.
+3. Implemented basic validations for required fields (Name, ID).
+4. Understood how to manage arrays of objects (adding, listing, removing employees).
+5. Gained experience with menu-driven programs and switch-case handling in Node.js.

@@ -1,0 +1,36 @@
+Admin Dashboard with CSS Grid Layout and Theme Switching
+In this experiment we have created three files to perform the full experiment one for html(admin.html), one for css (admin.css) and another one for java script (admin.js).
+In the html file we created the basic structure for the admin dashboard using body tag , head tag , header tag , navigation tag (nav) ,grid tag ,and etc.
+In CSS file we have used we have used body and many classes with many other different properties as they required for structuring the different area of web page as given in question. We have to use different classes for for different area to style it as required and have to apply the properties accordingly.
+In JavaScript code adds dark mode functionality to the webpage. When the checkbox with ID modeToggle is toggled, it adds or removes the dark-mode class on the body element, switching between light and dark themes dynamically.
+
+
+ Key Features:
+ 1- Header Section:
+        Displays the dashboard title ("Admin Dashboard").
+        Includes a Dark Mode toggle switch to switch between light and dark themes dynamically (without reloading the page).
+
+2- Sidebar (Navigation Menu):
+        Located on the left side.
+        Contains navigation links:
+        Home
+        Users
+        Settings
+
+3- Main Content Area:
+        Displays a welcome message for the admin.
+        Placeholder for future elements like charts, tables, or reports.
+
+4- Footer:
+        A simple footer with copyright.
+        Displays: "© 2025 Admin Panel"
+
+5- Dark Mode Toggle:
+        Built using a checkbox and JavaScript.
+        Applies a dark-mode class to the body, switching background and text colors for a night-friendly theme.
+
+LEARNIG OUTCOMES 
+1-  Understand basic web structure using HTML (header, sidebar, content, footer).
+2-  Apply CSS styling for layout and design using Flexbox and classes.
+3-  Learn to create a responsive UI with simple, clean navigation.
+4-  Implement theme switching (dark mode) using JavaScript and class toggling.

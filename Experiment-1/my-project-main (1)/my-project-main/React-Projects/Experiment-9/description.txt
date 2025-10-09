@@ -1,0 +1,5 @@
+This project demonstrates the use of object-oriented programming in JavaScript with ES6 classes, focusing on inheritance and method overriding.
+The base class, Person, contains common properties such as name and age, along with a method to display basic details.
+Two subclasses, Student and Teacher, extend the Person class. The Student class adds specific information like grade or course, while the Teacher class introduces attributes such as subject or department.
+Both subclasses enhance or override the base method to display complete information tailored to their roles. By creating instances of Student and Teacher and calling their methods, the project highlights how inheritance allows reusability and reduces redundancy, while overriding enables flexibility and specialization.
+This practical example helps strengthen core programming concepts and builds a solid foundation in object-oriented design using modern JavaScript, bridging theory with real-world application.

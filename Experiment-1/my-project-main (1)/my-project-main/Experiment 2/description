@@ -1,0 +1,53 @@
+we have done all this in Experiment 2 for creating the banking UI with balance , deposit and 
+withdraw buttons. we have used many function or tags of html like margin, padding , align 
+firstly we have created a html file named index.html which contain head  and body tag measurly
+then we have created a css file named style.css in which we used body tag and many classes in 
+html like .container , .amount , .btn , .deposit and .withdraw. within these classes we used 
+many properties to design the banking UI.
+
+FOR DETAILED DESCRIPTION READ BELOW :
+
+
+HTML Description (index.html):
+This is a basic structure for a bank application UI using HTML. Here's what each part does:
+
+<!DOCTYPE html>: Declares the document as HTML5.
+<html lang="en">: Starts the HTML document with English as the language.
+
+head :
+Sets character encoding to UTF-8.
+Sets the title of the web page to "Bank App".
+Links an external CSS file named style.css for styling.
+
+body :
+Contains a main div with class container, which holds the UI content.
+Inside the container, there's a card which:
+Displays a balance amount ($0) using the amount div.
+Provides two buttons: Deposit and Withdraw with their respective classes for styling.
+
+
+ CSS Description (style.css):
+This CSS file styles the bank app to be clean, centered, and visually appealing:
+
+body:
+Removes default margin and padding.
+Sets a light gray background.
+Uses Flexbox to center the content vertically and horizontally.
+Applies a clean sans-serif font.
+
+.container:
+White background card with padding.
+Rounded corners and a subtle box shadow for a card-like effect.
+
+.amount:
+Displays the balance amount.
+Large green text centered with spacing below it.
+
+.btn:
+Common button style: full width, padding, white text, no borders, rounded corners, cursor pointer, and margin between buttons.
+
+.deposit:
+Green background indicating a positive action (deposit).
+
+.withdraw:
+Red background indicating a negative action (withdraw).

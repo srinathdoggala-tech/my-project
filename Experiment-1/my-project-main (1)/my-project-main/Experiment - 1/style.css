@@ -1,0 +1,18 @@
+form{
+    background-color: green;
+    width: 150px ;
+    height: 150px;
+    border: 30px ridge black;
+    border-radius:10px ;
+    padding:50px;
+    margin:100px;
+    
+}
+body{
+    background-color:red;
+   display:flex;
+    flex-direction:column;
+   justify-content:space-around;
+   align-content:first baseline; 
+
+}
