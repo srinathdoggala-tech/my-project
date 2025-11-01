@@ -1,0 +1,16 @@
+This project is small but making very strong magic. When you start typing inside the box, immediately it is showing how many characters already you put. 
+At same time, it is also showing how many characters still remaining before you hit the big wall of 200 limit. 
+So you can keep typing, typing, typing, but never cross the border because system is already warning you when you going near finish line. 
+
+It is made by HTML for giving skeleton body, CSS for making beauty style, and JavaScript for putting brain and calculation. 
+No refresh, no button click, all working live like lightning fast. 
+When you add more text, counter going up like rocket, when you erase text, counter going down like elevator. 
+Remaining character part is also changing quick quick so you always knowing balance left for you. 
+
+This experiment is good for anybody writing essay, blog, tweet, or making comment where strict character rule is there. 
+Instead of writing and then counting with fingers or calculator, this project give instant number feedback. 
+So user is never confused, always inside safe zone, and writing can be smart and clean. 
+Small project, but giving big help in daily typing life.
+
+
+// ~ thank you ~

@@ -1,0 +1,41 @@
+Experiment 17B - Real-Time Chat Application
+
+OBJECTIVE:
+Build a real-time chat application using Socket.IO for instant messaging between multiple users.
+
+WHAT'S IMPLEMENTED:
+- Full-stack real-time chat application with WebSocket communication
+- Express.js backend server with Socket.IO integration
+- React frontend with Socket.IO client for real-time messaging
+- Instant message broadcasting to all connected users
+- User connection and disconnection tracking
+
+KEY FEATURES:
+- Real-time messaging between multiple users
+- Users can enter their name and send messages
+- All messages are instantly broadcast to all connected clients
+- Live chat feed displaying all conversation history
+- Automatic connection management (connect/disconnect events)
+- CORS enabled for cross-origin requests
+
+TECHNOLOGIES USED:
+Backend:
+- Node.js with Express.js
+- Socket.IO server for WebSocket communication
+- HTTP server for Socket.IO integration
+
+Frontend:
+- React with Vite
+- Socket.IO client for real-time communication
+- Simple form-based UI for messaging
+
+LEARNING OUTCOMES:
+- Understanding WebSocket communication and real-time data transfer
+- Implementing Socket.IO for bidirectional event-based communication
+- Building full-stack applications with real-time features
+- Managing client-server connections and event handling
+- Creating responsive real-time user interfaces
+
+ARCHITECTURE:
+- Backend (Port 5000): Express server with Socket.IO for handling connections and message broadcasting
+- Frontend (Vite dev server): React app connecting to Socket.IO server for real-time chat

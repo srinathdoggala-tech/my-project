@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    height: 300px;
+    width: 700px;
+    margin: 40px;
+    padding: 20px;
+    border: 2px solid rgb(226, 104, 104);
+}
+
+.container #text-area{
+    height: 70px;
+    width: 600px;
+    place-content: start;
+}
+
+.col{
+    margin-top: 15px;
+}

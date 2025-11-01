@@ -1,0 +1,4 @@
+In this experiment we try React basic. First we make ProductCard component, it take props for product name, price, inStock and show inside box. 
+We keep many product in array and use map() to show many card without writing again and again. After that we also make theme change button. 
+With state in React we switch between light and dark background, and CSS variable change color. 
+So this experiment show how to pass props, how to render many items, and how to use state for theme switch.

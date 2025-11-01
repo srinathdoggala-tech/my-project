@@ -1,0 +1,14 @@
+Tiny Card & REST Fun Server 
+
+This is a teeny-weeny Node-Express magic box. It go brr on port 3000 and talk RESTy words.
+
+- /     -> peek-a-boo! It tell ya your URL and method.
+- /submit -> say "Data submitted!" with big smile
+- /update -> whisper "Data updated"
+- /delete -> shout "Data Deleted!"
+
+Card box (memory only, poof when sleep):
+- /cards       -> show all cards it remember
+- /cards/:id   -> find one card by number
+- /cards POST  -> add card: { "suit": "...", "value": "..." }
+- /cards/:id DELETE -> bye-bye card

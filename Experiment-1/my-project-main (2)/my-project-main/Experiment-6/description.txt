@@ -1,0 +1,5 @@
+The Interactive SVG Drawing Tool is like your mini sketchpad right inside the browser. No need for fancy apps or heavy libraries — just pure JavaScript magic with some SVG power. It listens to your mouse (mousedown, mousemove, mouseup) and turns your movements into smooth, flowing strokes.
+
+Click, drag, and boom — a shiny <path> starts following your cursor like a loyal puppy. Unlike boring straight-line tools that feel stiff, this one gives you nice wavy, natural-looking doodles. And guess what? If your mouse goes on a little adventure outside the box, no worries! The moment it comes back in, your drawing keeps going like nothing ever happened. 
+
+It’s simple, lightweight, and surprisingly powerful — a neat example of how DOM tricks, SVG magic, and event handling can team up to make something super fun. Basically, you get a tiny paint app in the browser where you can sketch, scribble, and play — no reloads, no frameworks, just pure JS vibes. 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Login Window</title>
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <div class="form-div">
+        <form action="/submit" method="post">
+            <label>Name: </label>
+            <input type="text" name="name" placeholder="Enter your full name" required minlength="3"
+                oninvalid="this.setCustomValidity('Not Valid')">
+            <br>
+
+            <label>Email: </label>
+            <input type="email" name="email" placeholder="Enter your Email" required>
+            <br>
+
+            <label>Age: </label>
+            <input type="number" name="age" placeholder="Age" required min="5" max="120">
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+            <input type="reset" value="Reset">
+        </form>
+
+        <form action="/submit" method="post">
+            <label>Name: </label>
+            <input type="text" name="name" placeholder="Enter your full name" required minlength="3"
+                oninvalid="this.setCustomValidity('Not Valid')">
+            <br>
+
+            <label>Email: </label>
+            <input type="email" name="email" placeholder="Enter your Email" required>
+            <br>
+
+            <label>Age: </label>
+            <input type="number" name="age" placeholder="Age" required min="5" max="120">
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+
+</html>

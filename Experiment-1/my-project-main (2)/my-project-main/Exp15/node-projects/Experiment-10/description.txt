@@ -1,0 +1,5 @@
+This project make tiny Node.js app with Express and simple command line interface for employee.
+Server run on port 3000 and handle small routes like GET, POST, PATCH, DELETE for testing purpose.
+At same time, terminal show menu for employee add, list, remove, or exit, all keep only in memory.
+When add new employee, it ask ID and Name, not allow duplicate ID, list print all, remove delete by ID.
+Everything simple, no database, when exit program then all employee data gone, only run fresh next time.

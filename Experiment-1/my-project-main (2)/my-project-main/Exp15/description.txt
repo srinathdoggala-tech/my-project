@@ -1,0 +1,16 @@
+E-commerce Catalog with Nested Document Structure in MongoDB
+
+This project show how to make e-commerce catalog using MongoDB. We put product variants (color, size, stock) inside product document itself.
+
+Made using Node.js, Express.js, and Mongoose. It have:
+- Product with variants inside same document
+- API to get products and filter them
+- Sample data with different products
+- Simple JSON response
+
+API Routes:
+- GET /products - Get all product
+- GET /products/category/:category - Filter by category  
+- GET /products/by-color/:color - Find product by color
+
+Good for learning MongoDB nested document and e-commerce application.

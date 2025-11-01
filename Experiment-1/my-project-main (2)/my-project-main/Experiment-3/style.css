@@ -1,0 +1,86 @@
+:root {
+    --bg-color-header: greenyellow;
+    --bg-color-footer: green;
+    --bg-color-aside: rgb(206, 191, 191);
+    --bg-color-body: white;
+    --bg-main: white;
+    --body-color-text: black;
+    --btn-bg-color: green;
+    --btn-text-color: white;
+}
+
+#theme-switch:checked ~ .dashboard {
+    --bg-color-header: #1e1e1e;
+    --bg-color-footer: #1e1e1e;
+    --bg-color-aside: #080808;
+    --bg-color-body: black;
+    --bg-main: rgb(38, 39, 39);
+    --body-color-text: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-body);
+    color: var(--body-color-text);
+    font-family: Arial, sans-serif;
+}
+
+#theme-switch {
+    display: none;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 100px 1fr 50px;
+    min-height: 100vh;
+}
+
+.header {
+    grid-column: 1 / -1;
+    height: 100px;
+    background-color: var(--bg-color-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    color: var(--body-color-text);
+    padding: 0 10px;
+}
+
+.aside {
+    
+    background-color: var(--bg-color-aside);
+    grid-column: 1;
+    grid-row: 2;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+
+.aside ul li::marker {
+    color: var(--body-color-text);
+}
+
+.main {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 15px;
+    background-color: var(--bg-main);
+    color: var(--body-color-text);
+    overflow-y: auto;
+}
+
+
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    height: 50px;
+    background-color: var(--bg-color-footer);
+    color: var(--body-color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+Experiment 9 — Build, Dockerize, and CI (short)
+
+What this demonstrates:
+- Build the app (npm run build) to generate dist/.
+- Create a Docker image and run the container (check logs/status in Docker Desktop).
+- Tag and push the image to Docker Hub.
+- Verify an automated build with GitHub Actions.
+
+This folder contains screenshots proving each step. The app’s source lives in react-projects/Experiment-9/; this folder is the evidence of build → container → push → CI.

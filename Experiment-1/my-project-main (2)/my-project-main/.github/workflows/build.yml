@@ -1,0 +1,65 @@
+name: Manually Build React App (Experiment-7)
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'react-projects/Experiment-7/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'react-projects/Experiment-7/**'
+  
+  workflow_dispatch: # given button to run worflow manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: react-projects/Experiment-7
+
+        
+    steps:
+      # Step 1: Checkout code
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Step 3: Install dependencies and build React app
+      - name: Install dependencies and build
+        run: |
+          npm ci
+          npm run build
+
+      # Step 4: Build Docker image
+      - name: Build Docker Image
+        run: |
+          docker build -t react-experiment-7 .
+      
+      - name: Check Docker Username (for debug only)
+        run: echo "Docker user is $DOCKER_USERNAME"
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+
+      # Step 5 (Optional): Push to Docker Hub
+      - name: Login to Docker Hub
+        if: github.ref == 'refs/heads/main'
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Push Image to Docker Hub
+        if: github.ref == 'refs/heads/main'
+        run: |
+          docker tag react-experiment-7 ${{ secrets.DOCKERHUB_USERNAME }}/react-experiment-7:latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/react-experiment-7:latest
+

@@ -1,0 +1,76 @@
+.library-card{
+  margin-top: 70px;
+  position: relative;
+  width: 70%;
+  justify-self: center;
+}
+
+.library-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.library-search {
+  margin-bottom: 18px;
+}
+
+.search-input {
+  display: block;
+  width: 30%;
+  padding: 8px 12px;
+}
+
+.library-form {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  box-sizing: border-box;
+}
+
+.form-input {
+  flex: 1;
+  padding: 8px 10px;
+}
+
+.add-btn {
+  border: 1px solid black;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.library-list {
+  margin-top: 8px;
+}
+
+.book-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #000409;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+}
+
+.book-title {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.book-author {
+  font-size: 0.98rem;
+}
+
+.remove-btn {
+  border: 1px solid black;
+  padding: 3px 7px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.empty-msg {
+  text-align: center;
+  margin-top: 18px;
+}

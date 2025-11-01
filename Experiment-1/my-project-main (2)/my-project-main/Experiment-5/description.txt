@@ -1,0 +1,9 @@
+In this experiment, I make a web page which show some products and user can filter them by category. I keep all products and categories inside JavaScript arrays. From the category array, I fill the dropdown menu so no need to write options in HTML by hand.
+
+In JavaScript, first I take the category array and add each category into dropdown using loop. Then I have a product array, where each product has a name and category. When user select some category from dropdown, one function run which check every product one by one. If product category match with selected one, then it show, otherwise it hide.
+
+For this, I use DOM functions like createElement, appendChild, and also change innerHTML to update product list. I also put event listener on dropdown so whenever user change category, products update instantly without refreshing page.
+
+In CSS part, I also center the container in body, so page look clean and balanced.
+
+So overall, this experiment help me to understand arrays, event handling, and DOM manipulation in JavaScript in a practical way.

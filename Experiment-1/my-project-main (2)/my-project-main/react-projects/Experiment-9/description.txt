@@ -1,0 +1,6 @@
+In this experiment, we created a React application to display a description file on a webpage. 
+We structured the project with a React component that loads and renders the content of a text file. 
+Normal CSS was used for styling instead of external frameworks, keeping the design simple. 
+Additionally, we added a feature to toggle and view the description/code content directly on the page. 
+This experiment demonstrated how React can be used to integrate external text data, 
+style it with CSS, and enhance interactivity using components and buttons.

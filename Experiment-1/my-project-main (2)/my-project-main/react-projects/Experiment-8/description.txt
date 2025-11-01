@@ -1,0 +1,6 @@
+Experiment-8: Library Management UI
+
+This experiment implements a simple React-based library management interface. 
+Users can view a list of books, search by title or author, add new books, and remove existing ones. 
+All actions update the UI instantly without page reloads. The app starts with three sample books and uses functional components with
+React hooks for state management. Styling is handled via CSS for a clean and modern look.

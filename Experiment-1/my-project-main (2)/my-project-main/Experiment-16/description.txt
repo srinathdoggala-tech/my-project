@@ -1,0 +1,50 @@
+EXPERIMENT 16: Bank Transfer System
+===================================
+
+• Tech Stack: Node.js, Express, MongoDB, Mongoose
+• Purpose: Secure money transfer API
+
+FEATURES:
+• Account management
+• Money transfers with validation
+• Balance checking
+• Rollback mechanism
+• Error handling
+
+APIS:
+• POST /api/users - Create account
+• GET /api/users - List accounts
+• POST /api/transfer - Transfer money
+• GET /api/balance/:id - Check balance
+
+IMPLEMENTATION:
+• Sequential DB updates (debit → credit)
+• Auto-rollback on failure
+• Input validation
+• Prevents self-transfers
+• Negative amount blocking
+
+TESTING:
+• Test suite included
+• Success/failure scenarios
+• Invalid input handling
+
+SECURITY:
+• Balance validation
+• Account verification
+• Input sanitization
+• Data consistency
+
+FILES:
+• server.js - API server
+• models/User.js - Schema
+• test-api.js - Test suite
+• Postman collection
+
+USAGE:
+1. Start MongoDB
+2. npm run dev
+3. Server: localhost:3000
+4. Test: npm test
+
+Demonstrates secure banking without DB transactions.

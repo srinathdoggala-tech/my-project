@@ -1,0 +1,40 @@
+Experiment 17A - Connecting React Frontend to Express API Using Axios
+
+OBJECTIVE:
+Learn how to connect a React frontend application to a backend Express.js API using Axios to fetch data. This task helps you understand how to integrate frontend and backend parts of a full stack application and handle HTTP requests in React.
+
+TASK DESCRIPTION:
+Create a simple Express.js API that returns a list of products (each with a name and price). Then, build a React frontend application with a component that uses Axios to fetch the product data from the Express API when the component mounts. Display the list of products in a user-friendly layout, showing their name and price. Ensure you handle loading states and possible errors when fetching data. Test the connection by running both the frontend and backend locally and verifying that the React app correctly displays data fetched from the Express API.
+
+WHAT'S IMPLEMENTED:
+- Express.js backend API serving product data
+- React frontend with Axios for HTTP requests
+- Product list component with loading and error states
+- Error handling for failed API requests
+- Professional UI for displaying products
+
+KEY FEATURES:
+- GET /api/products endpoint returning JSON data
+- Axios integration for API calls
+- Loading states during data fetching
+- Error handling and user feedback
+- Responsive product display layout
+
+TECHNOLOGIES USED:
+- Express.js for backend API
+- React with Vite for frontend
+- Axios for HTTP requests
+- CORS for cross-origin requests
+
+LEARNING OUTCOMES:
+- Understanding full-stack application architecture
+- Implementing REST API endpoints
+- Making HTTP requests from React components
+- Handling asynchronous operations and states
+- Error handling in frontend applications
+
+FILES STRUCTURE:
+- backend/server.js: Express server with API endpoints
+- src/components/ProductList.jsx: Main product display component
+- src/App.jsx: Main application component
+- package.json: Dependencies for both frontend and backend

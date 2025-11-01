@@ -1,0 +1,30 @@
+{
+  "name": "react-express-axios-app",
+  "version": "1.0.0",
+  "description": "React Frontend connecting to Express API using Axios",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite",
+    "backend": "cd backend && npm start",
+    "backend-dev": "cd backend && npm run dev",
+    "full-dev": "concurrently \"npm run backend-dev\" \"npm run dev\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.1.0",
+    "vite": "^4.5.0",
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["react", "express", "axios", "api", "full-stack"],
+  "author": "Kartik Patel",
+  "license": "ISC"
+}

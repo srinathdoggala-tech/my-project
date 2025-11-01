@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(194, 194, 205);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    background-color: rgb(77, 160, 160);
+    width: 200px;
+    height: 150px;
+    margin: 25px;
+    padding: 5px;
+    border: 30px groove black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: rgb(121, 93, 52);
+    text-align: center;
+    margin-bottom: 20px;
+}

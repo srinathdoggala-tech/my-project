@@ -1,0 +1,20 @@
+{
+  "name": "experiment-12",
+  "version": "1.0.0",
+  "description": "Concurrent Ticket Booking System with Seat Locking and Confirmation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

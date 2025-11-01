@@ -1,0 +1,5 @@
+This project make small simple ticket booking system using Node.js and Express server.
+User can check all seats, then choose and lock one seat, later confirm the booking properly.
+When seat is locked, it stay only for one full minute, after that lock expire and seat become free again.
+System also stop many users from booking same seat together at same time, so no double booking happen.
+It show clear message when lock success, when lock expire, or when seat already booked by other person.
