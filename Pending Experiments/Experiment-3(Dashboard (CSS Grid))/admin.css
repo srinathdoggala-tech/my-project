@@ -1,0 +1,111 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Layout with CSS Grid */
+.dashboard {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr 40px;
+  min-height: 100vh;
+  border: 1px solid #000;
+}
+
+/* Header */
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: purple;
+}
+
+/* Main Content */
+.main-content {
+  grid-area: main;
+  padding: 20px;
+  background-color: inherit;
+}
+
+/* Footer */
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Light Theme */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-theme .header,
+body.light-theme .footer {
+  background-color: #4CAF50;
+  color: white;
+}
+
+body.light-theme .sidebar {
+  background-color: #f2f2f2;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+body.dark-theme .header,
+body.dark-theme .footer {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-theme .sidebar {
+  background-color: #2b2b2b;
+}
+
+/* Button */
+#theme-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}

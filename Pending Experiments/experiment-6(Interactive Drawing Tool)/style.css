@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+svg {
+    height: 650px;
+    width: 900px;
+    border: 2px solid #555;
+    background: #f8f8f8;
+    cursor: crosshair;
+}
