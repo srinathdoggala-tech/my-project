@@ -1,0 +1,79 @@
+Dynamic Product Filter – Detailed Description
+
+This project is a Dynamic Product Filter that lets users display only the products of a chosen category. It is divided into three parts:
+
+1.exp5.html → Structure of the page
+
+2.exp5.css → Styling and design
+
+3.exp5.js → Filtering functionality
+
+HTML (exp5.html)
+
+The HTML file provides the structure for the project.
+
+1.A container that holds everything
+
+2.A heading "Product List"
+
+3.A dropdown menu (select) with options: All, Clothing, Electronics, and Books
+
+4.A product list (ul) where each item (li) has a category assigned through the data-category attribute
+
+5.This makes it easy for JavaScript to recognize which category each product belongs to.
+
+CSS (exp5.css)
+
+1.The CSS file gives the page a simple, clean, and readable look.
+
+2.The container has a border, padding, and fixed width
+
+3.The dropdown is styled for usability with padding
+
+4.Products are shown as separate boxes with borders, rounded corners, and light background
+
+5.Proper spacing makes the list user-friendly
+
+JavaScript (exp5.js)
+
+The JavaScript file is the core logic of the project, responsible for filtering products dynamically.
+
+Element Selection:
+
+1.It first selects the dropdown menu so it can detect which category the user chooses.
+
+2.It also selects all product items in the list so they can be shown or hidden as needed.
+
+Filter Function:
+
+1.A function is created to check the current value of the dropdown.
+
+2.If "All" is selected, every product is displayed.
+
+3.Otherwise, each product’s category is compared with the selected value.
+
+4.Matching items are displayed, and non-matching items are hidden.
+
+Event Listener:
+
+1.An event listener is attached to the dropdown.
+
+2.Whenever the user changes the category, the filter function runs immediately, updating the product list in real-time.
+
+Initial Setup:
+
+1.The filter function is also called once when the page first loads.
+
+2.This ensures the list starts in a correct state even before the user interacts with it.
+
+Key Points of JavaScript Functionality:
+
+1.Uses category data stored in data-category attributes for accuracy
+
+2.Updates the product list dynamically without reloading the page
+
+3.Provides instant feedback to the user when they switch categories
+
+4.Keeps the logic efficient by looping through all items only when needed
+
+End Result: The user can select a category from the dropdown, and the product list updates immediately, showing only the relevant products.
