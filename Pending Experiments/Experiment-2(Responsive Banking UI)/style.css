@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.outer-container {
+    background-color: #f1f1f1;
+    border: 2px solid #000000;
+    padding: 40px; 
+}
+
+.inner-container {
+    background-color: #ffffff;
+    width: 320px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 8px 0 24px 0;
+    color: #28a745;
+}
+
+.buttons {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+button {
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.deposit {
+    background-color: #28a745; 
+}
+
+.withdraw {
+    background-color: #dc3545;
+}

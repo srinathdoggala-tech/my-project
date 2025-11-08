@@ -1,0 +1,110 @@
+Playing Cards API - Server Description
+ Project Overview
+Playing Cards API ek RESTful web service hai jo playing cards ke data ko manage karta hai. Yeh Express.js framework par built hai aur in-memory storage use karta hai.
+ Main Features
+Card Management: Create, read, delete playing cards
+
+RESTful Endpoints: Standard HTTP methods (GET, POST, DELETE)
+
+In-Memory Storage: Simple data persistence without database
+
+Error Handling: Proper error responses for invalid requests
+
+Data Structure
+Har card mein yeh information hoti hai:
+
+javascript
+{
+  id: 1,           // Unique identifier (auto-generated)
+  suit: "Hearts",  // Card suit (Hearts, Spades, Diamonds, Clubs)
+  value: "A"       // Card value (A, K, Q, J, 2-10)
+}
+API Endpoints
+1. Root Endpoint (GET /)
+Welcome message aur API information
+
+Response: HTML page with navigation links
+
+2. Get All Cards (GET /cards)
+Saare cards ka list return karta hai
+
+Response: JSON array of all cards
+
+Example: GET http://localhost:3000/cards
+
+3. Get Single Card (GET /cards/:id)
+Specific ID wala card return karta hai
+
+Params: id (card identifier)
+
+Error: 404 agar card nahi mila
+
+Example: GET http://localhost:3000/cards/1
+
+4. Create New Card (POST /cards)
+Naya card create karta hai
+
+Body: { "suit": "Hearts", "value": "Q" }
+
+Auto-generates: Unique ID
+
+Response: 201 status with created card
+
+Example: POST http://localhost:3000/cards
+
+5. Delete Card (DELETE /cards/:id)
+Specific card delete karta hai
+
+Params: id (card identifier)
+
+Error: 404 agar card nahi mila
+
+Response: Success message with deleted card
+
+Example: DELETE http://localhost:3000/cards/1
+
+Technical Stack
+Framework: Express.js
+
+Runtime: Node.js
+
+Port: 3000 (default)
+
+Data Format: JSON
+
+Storage: In-memory array
+
+Installation & Usage
+Dependencies install karo:
+
+bash
+npm install express
+Server start karo:
+
+bash
+node index.js
+Browser mein test karo:
+
+http://localhost:3000/ - Home page
+
+http://localhost:3000/cards - All cards
+
+Use Cases
+Learning Purpose: REST API concepts samajhne ke liye
+
+Prototyping: Quick API development ke liye
+
+Frontend Testing: React/Angular apps ke liye mock backend
+
+Card Games: Playing card based applications ke liye
+
+Sample Workflow
+Server start → Home page check karo
+
+GET /cards → Existing cards dekho
+
+POST /cards → Naya card add karo
+
+GET /cards/1 → Specific card dekho
+
+DELETE /cards/1 → Card delete ka

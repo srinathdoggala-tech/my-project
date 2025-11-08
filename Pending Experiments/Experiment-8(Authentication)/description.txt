@@ -1,0 +1,56 @@
+#  Role-Based Access Control (RBAC) System using Node.js, Express & JWT
+
+This project demonstrates how to build a **Role-Based Access Control (RBAC)** system using **Node.js**, **Express.js**, and **JWT (JSON Web Token)** for secure authentication and authorization.
+
+It allows you to create and log in users with different roles (Admin, Moderator, and User), and restrict access to routes based on their assigned role.
+
+---
+
+##  **Objective**
+
+To understand and implement:
+- User authentication with JWT tokens.
+- Role-based authorization middleware.
+- Secured APIs that only specific roles can access.
+- Error handling for invalid tokens and insufficient permissions.
+
+---
+
+##  **Technologies Used**
+
+- Node.js  
+- Express.js  
+- bcryptjs (for password hashing)  
+- jsonwebtoken (for token generation)  
+- dotenv (for environment variables)  
+- nodemon (for auto-restart during development)
+
+---
+
+##  **Project Setup**
+
+### 1️ Create the Folder
+```bash
+mkdir role-based-access
+cd role-based-access
+npm init -y
+npm install express bcryptjs jsonwebtoken dotenv
+npm install --save-dev nodemon
+
+
+.env file
+PORT=5000
+JWT_SECRET=mysecretkey
+
+
+
+users
+const bcrypt = require('bcryptjs');
+
+const users = [
+  { id: 1, username: 'VIVEK YADAV', password: bcrypt.hashSync('VIVEK331', 10), role: 'admin' },
+  { id: 2, username: 'VIVEK YADAV', password: bcrypt.hashSync('VIVEK331', 10), role: 'moderator' },
+  { id: 3, username: 'VIVEK YADAV', password: bcrypt.hashSync('VIVEK331', 10), role: 'user' },
+];
+
+module.exports = users;
